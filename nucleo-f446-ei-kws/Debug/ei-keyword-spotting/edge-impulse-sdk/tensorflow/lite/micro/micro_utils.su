@@ -1,0 +1,20 @@
+cmath:241:3:constexpr float std::fabs(float)	16	static
+cmath:1756:3:constexpr float std::round(float)	16	static
+micro_utils.cc:46:5:int tflite::ElementCount(const TfLiteIntArray&)	24	static
+micro_utils.cc:55:9:uint8_t tflite::FloatToAsymmetricQuantizedUInt8(float, float, int)	32	static
+micro_utils.cc:67:9:uint8_t tflite::FloatToSymmetricQuantizedUInt8(float, float)	24	static
+micro_utils.cc:78:8:int8_t tflite::FloatToAsymmetricQuantizedInt8(float, float, int)	32	static
+micro_utils.cc:90:9:int16_t tflite::FloatToAsymmetricQuantizedInt16(float, float, int)	32	static
+micro_utils.cc:102:8:int8_t tflite::FloatToSymmetricQuantizedInt8(float, float)	16	static
+micro_utils.cc:106:9:int32_t tflite::FloatToSymmetricQuantizedInt32(float, float)	24	static
+micro_utils.cc:117:6:void tflite::AsymmetricQuantize(const float*, int8_t*, int, float, int)	48	static
+micro_utils.cc:124:6:void tflite::AsymmetricQuantize(const float*, uint8_t*, int, float, int)	48	static
+micro_utils.cc:131:6:void tflite::AsymmetricQuantize(const float*, int16_t*, int, float, int)	48	static
+micro_utils.cc:138:6:void tflite::SymmetricQuantize(const float*, int32_t*, int, float)	40	static
+micro_utils.cc:145:6:void tflite::SymmetricPerChannelQuantize(const float*, int32_t*, int, int, float*)	48	static
+micro_utils.cc:157:6:void tflite::SignedSymmetricPerChannelQuantize(const float*, TfLiteIntArray*, int, int8_t*, float*)	96	static
+micro_utils.cc:201:6:void tflite::SignedSymmetricQuantize(const float*, TfLiteIntArray*, int8_t*, float*)	64	static
+micro_utils.cc:221:6:void tflite::SignedSymmetricQuantize(const float*, TfLiteIntArray*, int16_t*, float*)	56	static
+micro_utils.cc:241:6:void tflite::SignedSymmetricQuantize(const float*, TfLiteIntArray*, int32_t*, float*)	56	static
+micro_utils.cc:264:6:void tflite::SymmetricQuantize(const float*, TfLiteIntArray*, uint8_t*, float*)	24	static
+micro_utils.cc:271:6:void tflite::SymmetricDequantize(const int8_t*, int, float, float*)	32	static

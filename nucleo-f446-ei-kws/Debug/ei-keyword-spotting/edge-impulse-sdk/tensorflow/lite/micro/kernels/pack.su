@@ -1,0 +1,19 @@
+kernel_util.h:31:28:const TfLiteTensor* tflite::GetInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:43:22:TfLiteTensor* tflite::GetOutput(TfLiteContext*, const TfLiteNode*, int)	24	static
+pack.cc:71:14:TfLiteStatus tflite::ops::micro::pack::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	40	static
+pack.cc:111:21:TfLiteRegistration* tflite::ops::micro::Register_PACK()	4	static
+pack.cc:30:14:TfLiteStatus tflite::ops::micro::pack::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteTensor*, int, int) [with T = float]	104	static
+pack.cc:30:14:TfLiteStatus tflite::ops::micro::pack::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteTensor*, int, int) [with T = unsigned char]	104	static
+pack.cc:30:14:TfLiteStatus tflite::ops::micro::pack::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteTensor*, int, int) [with T = signed char]	104	static
+pack.cc:30:14:TfLiteStatus tflite::ops::micro::pack::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteTensor*, int, int) [with T = long int]	104	static
+pack.cc:30:14:TfLiteStatus tflite::ops::micro::pack::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteTensor*, int, int) [with T = long long int]	104	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = unsigned char]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = unsigned char]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = signed char]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = signed char]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = long int]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = long int]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = long long int]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = long long int]	16	static

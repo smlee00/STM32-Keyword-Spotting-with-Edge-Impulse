@@ -1,0 +1,2 @@
+arm_convolve_s8.c:52:12:arm_convolve_s8	368	static,ignoring_inline_asm
+arm_convolve_s8.c:356:9:arm_convolve_s8_get_buffer_size	16	static

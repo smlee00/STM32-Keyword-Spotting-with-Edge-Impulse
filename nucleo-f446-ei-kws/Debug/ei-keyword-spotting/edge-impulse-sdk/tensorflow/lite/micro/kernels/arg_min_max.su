@@ -1,0 +1,36 @@
+types.h:137:3:tflite::RuntimeShape::RuntimeShape()	16	static
+types.h:156:3:tflite::RuntimeShape::RuntimeShape(int, const int32*)	24	static
+types.h:178:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+types.h:188:16:int32 tflite::RuntimeShape::DimensionsCount() const	16	static
+types.h:189:16:int32 tflite::RuntimeShape::Dims(int) const	16	static
+types.h:204:17:int32* tflite::RuntimeShape::DimsData()	16	static
+types.h:213:15:void tflite::RuntimeShape::Resize(int)	16	static
+types.h:231:15:void tflite::RuntimeShape::ReplaceWith(int, const int32*)	32	static
+tensor_ctypes.h:34:21:tflite::RuntimeShape tflite::GetTensorShape(const TfLiteTensor*)	32	static
+kernel_util.h:31:28:const TfLiteTensor* tflite::GetInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:43:22:TfLiteTensor* tflite::GetOutput(TfLiteContext*, const TfLiteNode*, int)	24	static
+arg_min_max.cc:47:14:TfLiteStatus tflite::ops::micro::arg_min_max::Eval(TfLiteContext*, TfLiteNode*, bool)	200	static
+arg_min_max.cc:91:14:TfLiteStatus tflite::ops::micro::arg_min_max::ArgMinEval(TfLiteContext*, TfLiteNode*)	16	static
+arg_min_max.cc:95:14:TfLiteStatus tflite::ops::micro::arg_min_max::ArgMaxEval(TfLiteContext*, TfLiteNode*)	16	static
+arg_min_max.cc:101:21:TfLiteRegistration* tflite::ops::micro::Register_ARG_MAX()	4	static
+arg_min_max.cc:113:21:TfLiteRegistration* tflite::ops::micro::Register_ARG_MIN()	4	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = long int]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = long int]	16	static
+arg_min_max.cc:34:13:void tflite::ops::micro::arg_min_max::ArgMinMaxHelper(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, bool) [with T1 = float; T2 = long int; T3 = long int]	40	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = unsigned char]	16	static
+arg_min_max.cc:34:13:void tflite::ops::micro::arg_min_max::ArgMinMaxHelper(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, bool) [with T1 = unsigned char; T2 = long int; T3 = long int]	40	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = signed char]	16	static
+arg_min_max.cc:34:13:void tflite::ops::micro::arg_min_max::ArgMinMaxHelper(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, bool) [with T1 = signed char; T2 = long int; T3 = long int]	40	static
+arg_min_max.h:25:6:void tflite::reference_ops::ArgMinMax(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, const Cmp&) [with T1 = float; T2 = long int; T3 = long int; Cmp = tflite::ops::micro::Greater]	88	static
+arg_min_max.h:25:6:void tflite::reference_ops::ArgMinMax(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, const Cmp&) [with T1 = float; T2 = long int; T3 = long int; Cmp = tflite::ops::micro::Less]	88	static
+arg_min_max.h:25:6:void tflite::reference_ops::ArgMinMax(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, const Cmp&) [with T1 = unsigned char; T2 = long int; T3 = long int; Cmp = tflite::ops::micro::Greater]	88	static
+arg_min_max.h:25:6:void tflite::reference_ops::ArgMinMax(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, const Cmp&) [with T1 = unsigned char; T2 = long int; T3 = long int; Cmp = tflite::ops::micro::Less]	88	static
+arg_min_max.h:25:6:void tflite::reference_ops::ArgMinMax(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, const Cmp&) [with T1 = signed char; T2 = long int; T3 = long int; Cmp = tflite::ops::micro::Greater]	88	static
+arg_min_max.h:25:6:void tflite::reference_ops::ArgMinMax(const tflite::RuntimeShape&, const T1*, const T3*, const tflite::RuntimeShape&, T2*, const Cmp&) [with T1 = signed char; T2 = long int; T3 = long int; Cmp = tflite::ops::micro::Less]	88	static
+micro_utils.h:22:8:bool tflite::ops::micro::Greater::operator()(const T&, const T&) const [with T = float]	24	static
+micro_utils.h:29:8:bool tflite::ops::micro::Less::operator()(const T&, const T&) const [with T = float]	24	static
+micro_utils.h:22:8:bool tflite::ops::micro::Greater::operator()(const T&, const T&) const [with T = unsigned char]	24	static
+micro_utils.h:29:8:bool tflite::ops::micro::Less::operator()(const T&, const T&) const [with T = unsigned char]	24	static
+micro_utils.h:22:8:bool tflite::ops::micro::Greater::operator()(const T&, const T&) const [with T = signed char]	24	static
+micro_utils.h:29:8:bool tflite::ops::micro::Less::operator()(const T&, const T&) const [with T = signed char]	24	static

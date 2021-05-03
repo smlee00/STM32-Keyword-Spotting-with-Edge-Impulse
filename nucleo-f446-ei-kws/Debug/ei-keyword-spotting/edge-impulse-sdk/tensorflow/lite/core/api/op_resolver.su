@@ -1,0 +1,24 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+flatbuffers.h:556:15:const char* flatbuffers::String::c_str() const	16	static
+flatbuffers.h:2418:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+flatbuffers.h:2424:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+schema_generated.h:918:28:const char* const* tflite::EnumNamesBuiltinOperator()	4	static
+schema_generated.h:1052:20:const char* tflite::EnumNameBuiltinOperator(tflite::BuiltinOperator)	24	static
+schema_generated.h:9328:27:tflite::BuiltinOperator tflite::OperatorCode::builtin_code() const	16	static
+schema_generated.h:9331:30:const flatbuffers::String* tflite::OperatorCode::custom_code() const	16	static
+schema_generated.h:9334:11:int32_t tflite::OperatorCode::version() const	16	static
+op_resolver.cc:24:14:TfLiteStatus tflite::GetRegistrationFromOpCode(const tflite::OperatorCode*, const tflite::OpResolver&, tflite::ErrorReporter*, const TfLiteRegistration**)	40	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+flatbuffers.h:334:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = char]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+flatbuffers.h:50:13:bool flatbuffers::IsOutRange(const T&, const T&, const T&) [with T = tflite::BuiltinOperator]	24	static
+flatbuffers.h:2434:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = long int]	32	static
+flatbuffers.h:2434:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = signed char]	24	static
+flatbuffers.h:2445:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::String*]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = signed char]	16	static
+flatbuffers.h:2439:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::String*]	24	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = signed char]	16	static

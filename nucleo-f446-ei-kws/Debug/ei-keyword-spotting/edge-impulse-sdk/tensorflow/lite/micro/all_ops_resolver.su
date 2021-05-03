@@ -1,0 +1,72 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+op_resolver.h:35:11:tflite::OpResolver::~OpResolver()	16	static
+op_resolver.h:35:11:virtual tflite::OpResolver::~OpResolver()	16	static
+micro_op_resolver.h:58:29:virtual const TfLiteRegistration* tflite::MicroOpResolver::FindOp(tflite::BuiltinOperator, int) const	24	static
+micro_op_resolver.h:65:29:virtual const TfLiteRegistration* tflite::MicroOpResolver::FindOp(const char*, int) const	24	static
+micro_op_resolver.h:73:3:tflite::MicroOpResolver::~MicroOpResolver()	16	static
+micro_op_resolver.h:73:3:virtual tflite::MicroOpResolver::~MicroOpResolver()	16	static
+micro_mutable_op_resolver.h:34:7:tflite::MicroMutableOpResolver<128>::~MicroMutableOpResolver()	16	static
+micro_mutable_op_resolver.h:34:7:virtual tflite::MicroMutableOpResolver<128>::~MicroMutableOpResolver()	16	static
+all_ops_resolver.cc:27:1:tflite::AllOpsResolver::AllOpsResolver()	32	static
+op_resolver.h:27:7:constexpr tflite::OpResolver::OpResolver()	16	static
+micro_op_resolver.h:35:7:constexpr tflite::MicroOpResolver::MicroOpResolver()	16	static
+micro_mutable_op_resolver.h:36:12:tflite::MicroMutableOpResolver<tOpCount>::MicroMutableOpResolver(tflite::ErrorReporter*) [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:110:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAbs() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:117:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAdd() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:124:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddArgMax() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:131:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddArgMin() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:138:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAveragePool2D() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:146:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCeil() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:153:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddConcatenation() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:161:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddConv2D() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:166:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCos() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:173:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddDepthwiseConv2D() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:179:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddDequantize() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:185:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddEqual() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:192:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFloor() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:199:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFullyConnected() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:205:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddGreater() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:212:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddGreaterEqual() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:220:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddL2Normalization() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:228:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLess() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:235:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLessEqual() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:242:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLog() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:249:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogicalAnd() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:256:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogicalNot() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:263:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogicalOr() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:270:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogistic() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:277:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMaximum() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:284:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMaxPool2D() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:291:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMean() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:298:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMinimum() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:305:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMul() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:312:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddNeg() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:319:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddNotEqual() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:326:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPack() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:333:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPad() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:340:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPadV2() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:347:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPrelu() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:354:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddQuantize() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:359:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRelu() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:366:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRelu6() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:373:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddReshape() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:378:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddResizeNearestNeighbor() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:386:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRound() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:393:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRsqrt() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:400:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSin() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:407:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSoftmax() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:412:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSplit() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:419:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSqrt() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:426:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSquare() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:433:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddStridedSlice() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:441:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSub() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:448:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSvdf() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:453:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddTanh() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:460:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddUnpack() [with unsigned int tOpCount = 128]	16	static
+micro_mutable_op_resolver.h:77:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCustom(const char*, TfLiteRegistration*) [with unsigned int tOpCount = 128]	40	static
+micro_mutable_op_resolver.h:470:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddBuiltin(tflite::BuiltinOperator, const TfLiteRegistration&, tflite::MicroOpResolver::BuiltinParseFunction) [with unsigned int tOpCount = 128]	32	static
+micro_mutable_op_resolver.h:51:29:const TfLiteRegistration* tflite::MicroMutableOpResolver<tOpCount>::FindOp(const char*) const [with unsigned int tOpCount = 128]	24	static
+micro_mutable_op_resolver.h:39:29:const TfLiteRegistration* tflite::MicroMutableOpResolver<tOpCount>::FindOp(tflite::BuiltinOperator) const [with unsigned int tOpCount = 128]	24	static
+all_ops_resolver.h:25:7:tflite::AllOpsResolver::~AllOpsResolver()	16	static
+all_ops_resolver.h:25:7:virtual tflite::AllOpsResolver::~AllOpsResolver()	16	static
+micro_mutable_op_resolver.h:62:41:TfLiteStatus (* tflite::MicroMutableOpResolver<tOpCount>::GetOpDataParser(tflite::BuiltinOperator) const)(const tflite::Operator*, tflite::BuiltinOperator, tflite::ErrorReporter*, tflite::BuiltinDataAllocator*, void**) [with unsigned int tOpCount = 128]	24	static

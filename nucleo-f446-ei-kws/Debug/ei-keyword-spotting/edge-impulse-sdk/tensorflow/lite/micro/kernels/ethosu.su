@@ -1,0 +1,2 @@
+ethosu.cc:25:21:TfLiteRegistration* tflite::ops::micro::custom::Register_ETHOSU()	4	static
+ethosu.cc:27:13:const char* tflite::ops::micro::custom::GetString_ETHOSU()	4	static

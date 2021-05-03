@@ -1,0 +1,17 @@
+new:173:33:void* operator new(std::size_t, void*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+simple_memory_allocator.cc:28:1:tflite::SimpleMemoryAllocator::SimpleMemoryAllocator(tflite::ErrorReporter*, uint8_t*, uint8_t*)	24	static
+simple_memory_allocator.cc:37:1:tflite::SimpleMemoryAllocator::SimpleMemoryAllocator(tflite::ErrorReporter*, uint8_t*, size_t)	24	static
+simple_memory_allocator.h:30:7:constexpr tflite::SimpleMemoryAllocator::SimpleMemoryAllocator(const tflite::SimpleMemoryAllocator&)	16	static
+simple_memory_allocator.cc:43:24:static tflite::SimpleMemoryAllocator* tflite::SimpleMemoryAllocator::Create(tflite::ErrorReporter*, uint8_t*, size_t)	64	static
+simple_memory_allocator.cc:59:1:tflite::SimpleMemoryAllocator::~SimpleMemoryAllocator()	16	static
+simple_memory_allocator.cc:59:1:virtual tflite::SimpleMemoryAllocator::~SimpleMemoryAllocator()	16	static
+simple_memory_allocator.cc:61:10:virtual uint8_t* tflite::SimpleMemoryAllocator::AllocateFromHead(size_t, size_t)	40	static
+simple_memory_allocator.cc:76:10:virtual uint8_t* tflite::SimpleMemoryAllocator::AllocateFromTail(size_t, size_t)	40	static
+simple_memory_allocator.cc:91:10:uint8_t* tflite::SimpleMemoryAllocator::GetHead() const	16	static
+simple_memory_allocator.cc:93:10:uint8_t* tflite::SimpleMemoryAllocator::GetTail() const	16	static
+simple_memory_allocator.cc:95:8:size_t tflite::SimpleMemoryAllocator::GetHeadUsedBytes() const	16	static
+simple_memory_allocator.cc:99:8:size_t tflite::SimpleMemoryAllocator::GetTailUsedBytes() const	16	static
+simple_memory_allocator.cc:103:8:size_t tflite::SimpleMemoryAllocator::GetAvailableMemory() const	16	static
+simple_memory_allocator.cc:107:8:size_t tflite::SimpleMemoryAllocator::GetUsedBytes() const	24	static
+simple_memory_allocator.cc:111:8:size_t tflite::SimpleMemoryAllocator::GetBufferSize() const	16	static

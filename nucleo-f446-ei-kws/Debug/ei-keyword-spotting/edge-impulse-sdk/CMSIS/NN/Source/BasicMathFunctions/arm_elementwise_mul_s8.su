@@ -1,0 +1,1 @@
+arm_elementwise_mul_s8.c:52:1:arm_elementwise_mul_s8	600	static,ignoring_inline_asm

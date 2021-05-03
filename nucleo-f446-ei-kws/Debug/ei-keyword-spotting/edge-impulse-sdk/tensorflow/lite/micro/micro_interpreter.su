@@ -1,0 +1,72 @@
+profiler.h:65:12:uint32_t tflite::Profiler::BeginEvent(const char*, tflite::Profiler::EventType, int64_t)	48	static
+profiler.h:105:3:tflite::ScopedProfile::ScopedProfile(tflite::Profiler*, const char*, tflite::Profiler::EventType, int64_t)	32	static
+profiler.h:114:3:tflite::ScopedProfile::~ScopedProfile()	16	static
+profiler.h:127:3:tflite::ScopedOperatorProfile::ScopedOperatorProfile(tflite::Profiler*, const char*, int)	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+flatbuffers.h:2418:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+flatbuffers.h:2424:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+schema_generated.h:918:28:const char* const* tflite::EnumNamesBuiltinOperator()	4	static
+schema_generated.h:1052:20:const char* tflite::EnumNameBuiltinOperator(tflite::BuiltinOperator)	24	static
+schema_generated.h:10309:39:const flatbuffers::Vector<long int>* tflite::SubGraph::inputs() const	16	static
+schema_generated.h:10312:39:const flatbuffers::Vector<long int>* tflite::SubGraph::outputs() const	16	static
+schema_generated.h:10315:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >* tflite::SubGraph::operators() const	16	static
+schema_generated.h:10583:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >* tflite::Model::subgraphs() const	16	static
+micro_interpreter.h:40:12:tflite::internal::ContextHelper::ContextHelper(tflite::ErrorReporter*, tflite::MicroAllocator*)	24	static
+micro_interpreter.h:56:8:void tflite::internal::ContextHelper::SetNodeIndex(int)	16	static
+micro_interpreter.h:100:10:size_t tflite::MicroInterpreter::tensors_size() const	16	static
+micro_interpreter.h:113:10:size_t tflite::MicroInterpreter::inputs_size() const	16	static
+micro_interpreter.h:114:39:const flatbuffers::Vector<long int>& tflite::MicroInterpreter::inputs() const	16	static
+micro_interpreter.h:129:10:size_t tflite::MicroInterpreter::outputs_size() const	16	static
+micro_interpreter.h:130:39:const flatbuffers::Vector<long int>& tflite::MicroInterpreter::outputs() const	16	static
+micro_interpreter.cc:33:13:const char* tflite::{anonymous}::OpNameFromRegistration(const TfLiteRegistration*)	16	static
+micro_interpreter.cc:45:14:static TfLiteStatus tflite::internal::ContextHelper::AllocatePersistentBuffer(TfLiteContext*, size_t, void**)	24	static
+micro_interpreter.cc:51:14:static TfLiteStatus tflite::internal::ContextHelper::RequestScratchBufferInArena(TfLiteContext*, size_t, int*)	32	static
+micro_interpreter.cc:59:7:static void* tflite::internal::ContextHelper::GetScratchBuffer(TfLiteContext*, int)	16	static
+micro_interpreter.cc:64:6:)	28	static
+micro_interpreter.cc:75:1:tflite::MicroInterpreter::MicroInterpreter(const tflite::Model*, const tflite::MicroOpResolver&, uint8_t*, size_t, tflite::ErrorReporter*, tflite::Profiler*)	24	static
+micro_interpreter.cc:92:1:tflite::MicroInterpreter::MicroInterpreter(const tflite::Model*, const tflite::MicroOpResolver&, tflite::MicroAllocator*, tflite::ErrorReporter*, tflite::Profiler*)	24	static
+micro_interpreter.cc:107:1:tflite::MicroInterpreter::~MicroInterpreter()	32	static
+micro_interpreter.cc:122:6:void tflite::MicroInterpreter::Init(tflite::Profiler*)	24	static
+micro_interpreter.cc:141:6:void tflite::MicroInterpreter::CorrectTensorEndianness(TfLiteTensor*)	24	static
+micro_interpreter.cc:178:14:TfLiteStatus tflite::MicroInterpreter::AllocateTensors()	72	static
+profiler.h:125:7:tflite::ScopedOperatorProfile::~ScopedOperatorProfile()	16	static
+micro_interpreter.cc:259:14:TfLiteStatus tflite::MicroInterpreter::Invoke()	64	static
+micro_interpreter.cc:301:15:TfLiteTensor* tflite::MicroInterpreter::input(size_t)	32	static
+micro_interpreter.cc:312:15:TfLiteTensor* tflite::MicroInterpreter::output(size_t)	32	static
+micro_interpreter.cc:323:15:TfLiteTensor* tflite::MicroInterpreter::tensor(size_t)	24	static
+micro_interpreter.cc:334:14:TfLiteStatus tflite::MicroInterpreter::ResetVariableTensors()	32	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+flatbuffers.h:50:13:bool flatbuffers::IsOutRange(const T&, const T&, const T&) [with T = tflite::BuiltinOperator]	24	static
+flatbuffers.h:2445:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<long int>*]	16	static
+flatbuffers.h:2445:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	16	static
+flatbuffers.h:2445:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	16	static
+flatbuffers.h:247:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = long int]	16	static
+flatbuffers.h:256:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = long int]	16	static
+flatbuffers.h:247:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::Operator>]	16	static
+flatbuffers.h:247:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+flatbuffers.h:256:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+flatbuffers.h:251:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::Length() const [with T = long int]	16	static
+flatbuffers.h:261:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::operator[](flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+micro_interpreter.cc:172:6:void tflite::MicroInterpreter::CorrectTensorDataEndianness(T*, int32_t) [with T = float]	40	static
+micro_interpreter.cc:172:6:void tflite::MicroInterpreter::CorrectTensorDataEndianness(T*, int32_t) [with T = TfLiteFloat16]	40	static
+micro_interpreter.cc:172:6:void tflite::MicroInterpreter::CorrectTensorDataEndianness(T*, int32_t) [with T = long long int]	40	static
+micro_interpreter.cc:172:6:void tflite::MicroInterpreter::CorrectTensorDataEndianness(T*, int32_t) [with T = long int]	40	static
+micro_interpreter.cc:172:6:void tflite::MicroInterpreter::CorrectTensorDataEndianness(T*, int32_t) [with T = short int]	40	static
+micro_interpreter.cc:172:6:void tflite::MicroInterpreter::CorrectTensorDataEndianness(T*, int32_t) [with T = TfLiteComplex64]	40	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+flatbuffers.h:2439:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<long int>*]	24	static
+flatbuffers.h:2439:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	24	static
+flatbuffers.h:2439:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	24	static
+flatbuffers.h:104:22:static flatbuffers::IndirectHelper<T>::return_type flatbuffers::IndirectHelper<T>::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = long int]	16	static
+flatbuffers.h:334:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = long int]	16	static
+flatbuffers.h:112:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::SubGraph]	16	static
+flatbuffers.h:334:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = float]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = TfLiteFloat16]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long long int]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = short int]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = TfLiteComplex64]	32	static

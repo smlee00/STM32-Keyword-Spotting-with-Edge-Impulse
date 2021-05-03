@@ -1,0 +1,17 @@
+kernel_util.h:27:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:31:28:const TfLiteTensor* tflite::GetInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:43:22:TfLiteTensor* tflite::GetOutput(TfLiteContext*, const TfLiteNode*, int)	24	static
+unpack.cc:73:14:TfLiteStatus tflite::ops::micro::unpack::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	40	static
+unpack.cc:104:21:TfLiteRegistration* tflite::ops::micro::Register_UNPACK()	4	static
+unpack.cc:30:14:TfLiteStatus tflite::ops::micro::unpack::{anonymous}::UnpackImpl(TfLiteContext*, TfLiteNode*, const TfLiteTensor*, int, int) [with T = float]	104	static
+unpack.cc:30:14:TfLiteStatus tflite::ops::micro::unpack::{anonymous}::UnpackImpl(TfLiteContext*, TfLiteNode*, const TfLiteTensor*, int, int) [with T = long int]	104	static
+unpack.cc:30:14:TfLiteStatus tflite::ops::micro::unpack::{anonymous}::UnpackImpl(TfLiteContext*, TfLiteNode*, const TfLiteTensor*, int, int) [with T = unsigned char]	104	static
+unpack.cc:30:14:TfLiteStatus tflite::ops::micro::unpack::{anonymous}::UnpackImpl(TfLiteContext*, TfLiteNode*, const TfLiteTensor*, int, int) [with T = signed char]	104	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = long int]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = long int]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = unsigned char]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = unsigned char]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = signed char]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = signed char]	16	static

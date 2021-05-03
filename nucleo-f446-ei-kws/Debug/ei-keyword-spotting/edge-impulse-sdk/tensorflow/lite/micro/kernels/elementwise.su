@@ -1,0 +1,48 @@
+std_abs.h:75:3:constexpr float std::abs(float)	16	static
+cmath:184:3:constexpr float std::cos(float)	16	static
+cmath:338:3:constexpr float std::log(float)	16	static
+cmath:425:3:constexpr float std::sin(float)	16	static
+cmath:463:3:constexpr float std::sqrt(float)	16	static
+kernel_util.h:31:28:const TfLiteTensor* tflite::GetInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:43:22:TfLiteTensor* tflite::GetOutput(TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:55:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:56:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+kernel_util.h:61:16:int64_t tflite::NumElements(const TfLiteIntArray*)	32	static
+kernel_util.h:69:16:int64_t tflite::NumElements(const TfLiteTensor*)	16	static
+elementwise.cc:28:6:bool tflite::ops::micro::elementwise::{anonymous}::IsNumericSupportedType(TfLiteType)	16	static
+elementwise.cc:32:6:bool tflite::ops::micro::elementwise::{anonymous}::IsLogicalSupportedType(TfLiteType)	16	static
+elementwise.cc:67:21:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::EvalNumeric(TfLiteContext*, TfLiteNode*, float (*)(float))	24	static
+elementwise.cc:72:21:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::EvalLogical(TfLiteContext*, TfLiteNode*, bool (*)(bool))	24	static
+elementwise.cc:77:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::AbsEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:81:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::SinEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:85:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::CosEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:89:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::LogEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:93:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::SqrtEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:98:37:tflite::ops::micro::elementwise::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>	16	static
+elementwise.cc:98:37:static float tflite::ops::micro::elementwise::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	16	static
+elementwise.cc:98:37:tflite::ops::micro::elementwise::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::operator float (*)(float)() const	16	static
+elementwise.cc:97:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)	24	static
+elementwise.cc:102:37:tflite::ops::micro::elementwise::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>	16	static
+elementwise.cc:102:37:static float tflite::ops::micro::elementwise::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	16	static
+elementwise.cc:102:37:tflite::ops::micro::elementwise::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::operator float (*)(float)() const	16	static
+elementwise.cc:101:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)	24	static
+elementwise.cc:106:37:tflite::ops::micro::elementwise::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)::<lambda(bool)>	16	static
+elementwise.cc:106:37:static bool tflite::ops::micro::elementwise::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)::<lambda(bool)>::_FUN(bool)	16	static
+elementwise.cc:106:37:tflite::ops::micro::elementwise::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)::<lambda(bool)>::operator bool (*)(bool)() const	16	static
+elementwise.cc:105:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)	24	static
+elementwise.cc:113:21:TfLiteRegistration* tflite::ops::micro::Register_ABS()	4	static
+elementwise.cc:127:21:TfLiteRegistration* tflite::ops::micro::Register_SIN()	4	static
+elementwise.cc:141:21:TfLiteRegistration* tflite::ops::micro::Register_COS()	4	static
+elementwise.cc:155:21:TfLiteRegistration* tflite::ops::micro::Register_LOG()	4	static
+elementwise.cc:169:21:TfLiteRegistration* tflite::ops::micro::Register_SQRT()	4	static
+elementwise.cc:183:21:TfLiteRegistration* tflite::ops::micro::Register_RSQRT()	4	static
+elementwise.cc:197:21:TfLiteRegistration* tflite::ops::micro::Register_SQUARE()	4	static
+elementwise.cc:211:21:TfLiteRegistration* tflite::ops::micro::Register_LOGICAL_NOT()	4	static
+elementwise.cc:53:21:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::EvalImpl(TfLiteContext*, TfLiteNode*, T (*)(T), TfLiteType) [with T = float]	88	static
+elementwise.cc:53:21:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::EvalImpl(TfLiteContext*, TfLiteNode*, T (*)(T), TfLiteType) [with T = bool]	88	static
+elementwise.cc:38:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::GenericPrepare(TfLiteContext*, TfLiteNode*) [with bool (* <anonymous>)(TfLiteType) = tflite::ops::micro::elementwise::{anonymous}::IsNumericSupportedType]	48	static
+elementwise.cc:38:14:TfLiteStatus tflite::ops::micro::elementwise::{anonymous}::GenericPrepare(TfLiteContext*, TfLiteNode*) [with bool (* <anonymous>)(TfLiteType) = tflite::ops::micro::elementwise::{anonymous}::IsLogicalSupportedType]	48	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = float]	16	static
+tensor_ctypes.h:29:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = bool]	16	static
+tensor_ctypes.h:24:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = bool]	16	static

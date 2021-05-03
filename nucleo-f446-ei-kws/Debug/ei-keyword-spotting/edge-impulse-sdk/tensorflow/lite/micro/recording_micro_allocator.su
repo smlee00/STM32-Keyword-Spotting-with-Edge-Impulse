@@ -1,0 +1,30 @@
+new:173:33:void* operator new(std::size_t, void*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+flatbuffers.h:2418:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+flatbuffers.h:2424:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+schema_generated.h:10315:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >* tflite::SubGraph::operators() const	16	static
+recording_micro_allocator.h:40:3:tflite::RecordedAllocation::RecordedAllocation()	16	static
+recording_micro_allocator.cc:25:1:tflite::RecordingMicroAllocator::RecordingMicroAllocator(tflite::RecordingSimpleMemoryAllocator*, tflite::ErrorReporter*)	24	static
+recording_micro_allocator.cc:31:26:static tflite::RecordingMicroAllocator* tflite::RecordingMicroAllocator::Create(uint8_t*, size_t, tflite::ErrorReporter*)	48	static
+recording_micro_allocator.cc:47:20:tflite::RecordedAllocation tflite::RecordingMicroAllocator::GetRecordedAllocation(tflite::RecordedAllocationType) const	32	static
+recording_micro_allocator.cc:67:1:const tflite::RecordingSimpleMemoryAllocator* tflite::RecordingMicroAllocator::GetSimpleMemoryAllocator() const	16	static
+recording_micro_allocator.cc:71:6:void tflite::RecordingMicroAllocator::PrintAllocations() const	24	static
+recording_micro_allocator.cc:99:6:void tflite::RecordingMicroAllocator::PrintRecordedAllocation(tflite::RecordedAllocationType, const char*, const char*) const	64	static
+recording_micro_allocator.cc:111:14:virtual TfLiteStatus tflite::RecordingMicroAllocator::AllocateTfLiteTensorArray(TfLiteContext*, const tflite::SubGraph*)	32	static
+recording_micro_allocator.cc:123:14:virtual TfLiteStatus tflite::RecordingMicroAllocator::PopulateTfLiteTensorArrayFromFlatbuffer(const tflite::Model*, TfLiteContext*, const tflite::SubGraph*)	32	static
+recording_micro_allocator.cc:134:14:virtual TfLiteStatus tflite::RecordingMicroAllocator::AllocateNodeAndRegistrations(const tflite::SubGraph*, tflite::NodeAndRegistration**)	32	static
+recording_micro_allocator.cc:148:1:virtual TfLiteStatus tflite::RecordingMicroAllocator::PrepareNodeAndRegistrationDataFromFlatbuffer(const tflite::Model*, const tflite::SubGraph*, const tflite::MicroOpResolver&, tflite::NodeAndRegistration*)	40	static
+recording_micro_allocator.cc:162:14:virtual TfLiteStatus tflite::RecordingMicroAllocator::AllocateVariables(TfLiteContext*, const tflite::SubGraph*)	32	static
+recording_micro_allocator.cc:172:6:void tflite::RecordingMicroAllocator::SnapshotAllocationUsage(tflite::RecordedAllocation&)	16	static
+recording_micro_allocator.cc:180:6:void tflite::RecordingMicroAllocator::RecordAllocationUsage(tflite::RecordedAllocation&)	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:373:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+flatbuffers.h:2445:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	16	static
+flatbuffers.h:247:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::Operator>]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:362:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+flatbuffers.h:2439:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	24	static
+recording_micro_allocator.h:53:7:tflite::RecordingMicroAllocator::~RecordingMicroAllocator()	16	static
+recording_micro_allocator.h:53:7:virtual tflite::RecordingMicroAllocator::~RecordingMicroAllocator()	16	static

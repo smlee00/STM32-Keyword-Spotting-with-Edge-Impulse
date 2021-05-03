@@ -1,0 +1,11 @@
+profiler.h:51:11:tflite::Profiler::~Profiler()	16	static
+profiler.h:51:11:virtual tflite::Profiler::~Profiler()	16	static
+profiler.h:73:16:virtual void tflite::Profiler::EndEvent(uint32_t, int64_t, int64_t)	24	static
+profiler.h:91:16:virtual void tflite::Profiler::AddEvent(const char*, tflite::Profiler::EventType, uint64_t, uint64_t, int64_t, int64_t)	24	static
+micro_profiler.h:47:8:virtual void tflite::MicroProfiler::AddEvent(const char*, tflite::Profiler::EventType, uint64_t, uint64_t, int64_t, int64_t)	24	static
+profiler.h:23:7:constexpr tflite::Profiler::Profiler()	16	static
+micro_profiler.cc:23:1:tflite::MicroProfiler::MicroProfiler(tflite::ErrorReporter*)	16	static
+micro_profiler.cc:26:10:virtual uint32_t tflite::MicroProfiler::BeginEvent(const char*, tflite::Profiler::EventType, int64_t, int64_t)	24	static
+micro_profiler.cc:35:6:virtual void tflite::MicroProfiler::EndEvent(uint32_t)	24	static
+micro_profiler.h:44:3:tflite::MicroProfiler::~MicroProfiler()	16	static
+micro_profiler.h:44:3:virtual tflite::MicroProfiler::~MicroProfiler()	16	static

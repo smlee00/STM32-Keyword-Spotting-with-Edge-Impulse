@@ -1,0 +1,58 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:595:7:static constexpr unsigned char std::numeric_limits<unsigned char>::min()	4	static
+limits:598:7:static constexpr unsigned char std::numeric_limits<unsigned char>::max()	4	static
+limits:925:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+kernel_util.h:27:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:28:12:int tflite::SizeOfDimension(const TfLiteTensor*, int)	16	static
+kernel_util.h:61:16:int64_t tflite::NumElements(const TfLiteIntArray*)	32	static
+kernel_util.h:69:16:int64_t tflite::NumElements(const TfLiteTensor*)	16	static
+std_abs.h:71:3:constexpr double std::abs(double)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+cmath:1756:3:constexpr float std::round(float)	16	static
+kernel_util_lite.cc:32:14:TfLiteStatus tflite::PopulateConvolutionQuantizationParams(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, const TfLiteFusedActivation&, int32_t*, int*, int32_t*, int32_t*, int32_t*, int*)	72	static
+kernel_util_lite.cc:47:14:TfLiteStatus tflite::PopulateConvolutionQuantizationParams(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, const TfLiteFusedActivation&, int32_t*, int*, int32_t*, int32_t*, int32_t*, int*, int)	128	static
+kernel_util_lite.cc:122:14:TfLiteStatus tflite::GetQuantizedConvolutionMultipler(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, double*)	72	static
+kernel_util_lite.cc:160:14:TfLiteStatus tflite::GetQuantizedConvolutionMultipler(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, double*)	48	static
+kernel_util_lite.cc:181:19:tflite::{anonymous}::CalculateActivationRangeQuantizedImpl(TfLiteFusedActivation, int32_t, int32_t, TfLiteTensor*, int32_t*, int32_t*)::<lambda(float)>	16	static
+kernel_util_lite.cc:174:6:void tflite::{anonymous}::CalculateActivationRangeQuantizedImpl(TfLiteFusedActivation, int32_t, int32_t, TfLiteTensor*, int32_t*, int32_t*)	64	static
+kernel_util_lite.cc:201:14:TfLiteStatus tflite::CalculateActivationRangeQuantized(TfLiteContext*, TfLiteFusedActivation, TfLiteTensor*, int32_t*, int32_t*)	48	static
+kernel_util_lite.cc:226:6:bool tflite::HaveSameShapes(const TfLiteTensor*, const TfLiteTensor*)	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]	16	static
+kernel_util_lite.cc:233:14:TfLiteStatus tflite::CalculateShapeForBroadcast(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, TfLiteIntArray**)	80	static
+kernel_util_lite.cc:256:14:TfLiteStatus tflite::CalculateShapeForBroadcast(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, TfLiteIntArray**)	88	static
+cppmath.h:36:1:T tflite::TfLiteRound(T) [with T = float]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+unique_ptr.h:236:2:std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, std::__enable_if_t<(! std::is_lvalue_reference<_Del>::value), _Del&&>) [with _Del = void (*)(TfLiteIntArray*); <template-parameter-2-2> = void; _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	32	static
+unique_ptr.h:286:7:std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	32	static
+unique_ptr.h:352:7:std::unique_ptr<_Tp, _Dp>::pointer std::unique_ptr<_Tp, _Dp>::operator->() const [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	16	static
+unique_ptr.h:381:7:std::unique_ptr<_Tp, _Dp>::pointer std::unique_ptr<_Tp, _Dp>::release() [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	24	static
+move.h:99:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = void (*&)(TfLiteIntArray*)]	16	static
+unique_ptr.h:150:7:std::__uniq_ptr_impl<_Tp, _Dp>::__uniq_ptr_impl(std::__uniq_ptr_impl<_Tp, _Dp>::pointer, _Del&&) [with _Del = void (*)(TfLiteIntArray*); _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	32	static
+unique_ptr.h:153:18:std::__uniq_ptr_impl<_Tp, _Dp>::pointer& std::__uniq_ptr_impl<_Tp, _Dp>::_M_ptr() [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	16	static
+unique_ptr.h:365:7:std::unique_ptr<_Tp, _Dp>::deleter_type& std::unique_ptr<_Tp, _Dp>::get_deleter() [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	16	static
+move.h:99:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = TfLiteIntArray*&]	16	static
+unique_ptr.h:360:7:std::unique_ptr<_Tp, _Dp>::pointer std::unique_ptr<_Tp, _Dp>::get() const [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	16	static
+move.h:74:5:constexpr _Tp&& std::forward(typename std::remove_reference<_Tp>::type&) [with _Tp = void (*)(TfLiteIntArray*)]	16	static
+tuple:968:19:constexpr std::tuple<_T1, _T2>::tuple(_U1&&, _U2&&) [with _U1 = TfLiteIntArray*&; _U2 = void (*)(TfLiteIntArray*); typename std::enable_if<((std::_TC<true, _T1, _T2>::_MoveConstructibleTuple<_U1, _U2>() && std::_TC<true, _T1, _T2>::_ImplicitlyMoveConvertibleTuple<_U1, _U2>()) && (! std::is_same<typename std::remove_cv<typename std::remove_reference<_SrcTuple>::type>::type, std::allocator_arg_t>::value)), bool>::type <anonymous> = true; _T1 = TfLiteIntArray*; _T2 = void (*)(TfLiteIntArray*)]	32	static
+tuple:1320:5:>&) [with unsigned int __i = 0; _Elements = {TfLiteIntArray*, void (*)(TfLiteIntArray*)}]	16	static
+unique_ptr.h:155:18:_Dp& std::__uniq_ptr_impl<_Tp, _Dp>::_M_deleter() [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	16	static
+unique_ptr.h:154:18:std::__uniq_ptr_impl<_Tp, _Dp>::pointer std::__uniq_ptr_impl<_Tp, _Dp>::_M_ptr() const [with _Tp = TfLiteIntArray; _Dp = void (*)(TfLiteIntArray*)]	16	static
+move.h:74:5:constexpr _Tp&& std::forward(typename std::remove_reference<_Tp>::type&) [with _Tp = TfLiteIntArray*&]	16	static
+tuple:216:19:) [with _UHead = TfLiteIntArray*&; _UTail = {void (*)(TfLiteIntArray*)}; <template-parameter-2-3> = void; unsigned int _Idx = 0; _Head = TfLiteIntArray*; _Tail = {void (*)(TfLiteIntArray*)}]	32	static
+tuple:1309:5:>&) [with unsigned int __i = 0; _Head = TfLiteIntArray*; _Tail = {void (*)(TfLiteIntArray*)}]	16	static
+tuple:1320:5:>&) [with unsigned int __i = 1; _Elements = {TfLiteIntArray*, void (*)(TfLiteIntArray*)}]	16	static
+tuple:1326:5:>&) [with unsigned int __i = 0; _Elements = {TfLiteIntArray*, void (*)(TfLiteIntArray*)}]	16	static
+tuple:348:19:constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl(_UHead&&) [with _UHead = void (*)(TfLiteIntArray*); unsigned int _Idx = 1; _Head = void (*)(TfLiteIntArray*)]	24	static
+tuple:132:19:constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(_UHead&&) [with _UHead = TfLiteIntArray*&; unsigned int _Idx = 0; _Head = TfLiteIntArray*]	16	static
+tuple:195:7:>&) [with unsigned int _Idx = 0; _Head = TfLiteIntArray*; _Tail = {void (*)(TfLiteIntArray*)}]	16	static
+tuple:1309:5:>&) [with unsigned int __i = 1; _Head = void (*)(TfLiteIntArray*); _Tail = {}]	16	static
+tuple:1314:5:>&) [with unsigned int __i = 0; _Head = TfLiteIntArray*; _Tail = {void (*)(TfLiteIntArray*)}]	16	static
+tuple:132:19:constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(_UHead&&) [with _UHead = void (*)(TfLiteIntArray*); unsigned int _Idx = 1; _Head = void (*)(TfLiteIntArray*)]	16	static
+tuple:160:7:static constexpr _Head& std::_Head_base<_Idx, _Head, false>::_M_head(std::_Head_base<_Idx, _Head, false>&) [with unsigned int _Idx = 0; _Head = TfLiteIntArray*]	16	static
+tuple:334:7:static constexpr _Head& std::_Tuple_impl<_Idx, _Head>::_M_head(std::_Tuple_impl<_Idx, _Head>&) [with unsigned int _Idx = 1; _Head = void (*)(TfLiteIntArray*)]	16	static
+tuple:198:7:>&) [with unsigned int _Idx = 0; _Head = TfLiteIntArray*; _Tail = {void (*)(TfLiteIntArray*)}]	16	static
+tuple:160:7:static constexpr _Head& std::_Head_base<_Idx, _Head, false>::_M_head(std::_Head_base<_Idx, _Head, false>&) [with unsigned int _Idx = 1; _Head = void (*)(TfLiteIntArray*)]	16	static
+tuple:163:7:static constexpr const _Head& std::_Head_base<_Idx, _Head, false>::_M_head(const std::_Head_base<_Idx, _Head, false>&) [with unsigned int _Idx = 0; _Head = TfLiteIntArray*]	16	static
