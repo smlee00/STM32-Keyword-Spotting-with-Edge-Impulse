@@ -205,6 +205,12 @@ int main(void)
 		print_results = 0;
 	  }
 
+	  // Example: print if "yes" is above 0.5 threshold
+	  if (result.classification[3].value > 0.5)
+	  {
+		 ei_printf("YES!\r\n");
+	  }
+
     /* USER CODE BEGIN 3 */
   }
 
@@ -285,11 +291,6 @@ static void MX_CRC_Init(void)
 
   /* USER CODE END CRC_Init 1 */
   hcrc.Instance = CRC;
-//  hcrc.Init.DefaultPolynomialUse = DEFAULT_POLYNOMIAL_ENABLE;
-//  hcrc.Init.DefaultInitValueUse = DEFAULT_INIT_VALUE_ENABLE;
-//  hcrc.Init.InputDataInversionMode = CRC_INPUTDATA_INVERSION_NONE;
-//  hcrc.Init.OutputDataInversionMode = CRC_OUTPUTDATA_INVERSION_DISABLE;
-//  hcrc.InputDataFormat = CRC_INPUTDATA_FORMAT_BYTES;
   if (HAL_CRC_Init(&hcrc) != HAL_OK)
   {
     Error_Handler();
@@ -316,18 +317,18 @@ static void MX_SAI1_Init(void)
 
   /* USER CODE END SAI1_Init 1 */
   hsai_BlockB1.Instance = SAI1_Block_B;
-  hsai_BlockB1.Init.AudioMode = SAI_MODEMASTER_TX;
+  hsai_BlockB1.Init.AudioMode = SAI_MODEMASTER_RX;
   hsai_BlockB1.Init.Synchro = SAI_ASYNCHRONOUS;
   hsai_BlockB1.Init.OutputDrive = SAI_OUTPUTDRIVE_DISABLE;
   hsai_BlockB1.Init.NoDivider = SAI_MASTERDIVIDER_ENABLE;
   hsai_BlockB1.Init.FIFOThreshold = SAI_FIFOTHRESHOLD_EMPTY;
   hsai_BlockB1.Init.ClockSource = SAI_CLKSOURCE_NA;
-  hsai_BlockB1.Init.AudioFrequency = SAI_AUDIO_FREQUENCY_192K;
+  hsai_BlockB1.Init.AudioFrequency = SAI_AUDIO_FREQUENCY_32K;
   hsai_BlockB1.Init.SynchroExt = SAI_SYNCEXT_DISABLE;
   hsai_BlockB1.Init.MonoStereoMode = SAI_STEREOMODE;
   hsai_BlockB1.Init.CompandingMode = SAI_NOCOMPANDING;
   hsai_BlockB1.Init.TriState = SAI_OUTPUT_NOTRELEASED;
-  if (HAL_SAI_InitProtocol(&hsai_BlockB1, SAI_I2S_STANDARD, SAI_PROTOCOL_DATASIZE_16BIT, 2) != HAL_OK)
+  if (HAL_SAI_InitProtocol(&hsai_BlockB1, SAI_I2S_STANDARD, SAI_PROTOCOL_DATASIZE_24BIT, 2) != HAL_OK)
   {
     Error_Handler();
   }

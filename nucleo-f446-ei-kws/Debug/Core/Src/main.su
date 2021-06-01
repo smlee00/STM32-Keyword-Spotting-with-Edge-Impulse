@@ -113,21 +113,21 @@ ei_run_classifier.h:650:29:EI_IMPULSE_ERROR {anonymous}::run_classifier(ei::sign
 ei_run_classifier.h:722:13:void {anonymous}::calc_cepstral_mean_and_var_normalization(ei::ei_matrix*, void*)	24	static
 ei_run_classifier.h:751:42:EI_IMPULSE_ERROR {anonymous}::run_impulse(ei_impulse_result_t*, std::function<void(float*, unsigned int)>, bool)	64104	static
 main.cpp:101:5:int main()	128	static
-main.cpp:219:6:void SystemClock_Config()	184	static
-main.cpp:277:13:void MX_CRC_Init()	8	static
-main.cpp:308:13:void MX_SAI1_Init()	8	static
-main.cpp:345:13:void MX_USART2_UART_Init()	8	static
-main.cpp:376:13:void MX_DMA_Init()	16	static
-main.cpp:394:13:void MX_GPIO_Init()	48	static
-main.cpp:429:6:bool ei_microphone_inference_record()	16	static
-main.cpp:454:6:bool ei_microphone_inference_end()	8	static
-main.cpp:473:13:void audio_buffer_inference_callback(uint32_t, uint32_t)	24	static
-main.cpp:492:12:int get_audio_signal_data(size_t, size_t, float*)	24	static
-main.cpp:502:6:void vprint(const char*, va_list)	216	static
-main.cpp:514:6:)	16	static
-main.cpp:525:6:void HAL_SAI_RxHalfCpltCallback(SAI_HandleTypeDef*)	16	static
-main.cpp:536:6:void HAL_SAI_RxCpltCallback(SAI_HandleTypeDef*)	16	static
-main.cpp:550:6:void Error_Handler()	4	static,ignoring_inline_asm
+main.cpp:225:6:void SystemClock_Config()	184	static
+main.cpp:283:13:void MX_CRC_Init()	8	static
+main.cpp:309:13:void MX_SAI1_Init()	8	static
+main.cpp:346:13:void MX_USART2_UART_Init()	8	static
+main.cpp:377:13:void MX_DMA_Init()	16	static
+main.cpp:395:13:void MX_GPIO_Init()	48	static
+main.cpp:430:6:bool ei_microphone_inference_record()	16	static
+main.cpp:455:6:bool ei_microphone_inference_end()	8	static
+main.cpp:474:13:void audio_buffer_inference_callback(uint32_t, uint32_t)	24	static
+main.cpp:493:12:int get_audio_signal_data(size_t, size_t, float*)	24	static
+main.cpp:503:6:void vprint(const char*, va_list)	216	static
+main.cpp:515:6:)	16	static
+main.cpp:526:6:void HAL_SAI_RxHalfCpltCallback(SAI_HandleTypeDef*)	16	static
+main.cpp:537:6:void HAL_SAI_RxCpltCallback(SAI_HandleTypeDef*)	16	static
+main.cpp:551:6:void Error_Handler()	4	static,ignoring_inline_asm
 cmath:475:5:constexpr typename __gnu_cxx::__enable_if<std::__is_integer<_Tp>::__value, double>::__type std::sqrt(_Tp) [with _Tp = int]	16	static
 std_function.h:523:2:)>::operator=(_Functor&&) [with _Functor = ei::numpy::signal_from_buffer(float*, size_t, ei::signal_t*)::<lambda(size_t, size_t, float*)>; _Res = int; _ArgTypes = {unsigned int, unsigned int, float*}]	32	static
 cmath:415:5:constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = float; _Up = int]	24	static
