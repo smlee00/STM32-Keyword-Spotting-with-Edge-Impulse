@@ -9,4 +9,4 @@
 6. Click **Finish**.
 
 Colab file
-https://colab.research.google.com/github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb
+https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb
