@@ -1,4 +1,5 @@
 # STM32-Keyword-Spotting-with-Edge-Impulse #
+# Overview #
 
 ## Setting up Edge Impulse ##
 
@@ -6,6 +7,15 @@
 
 ![API key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/1.png?raw=true)
 
+## Data Curation ##
+
+## Feature Extraction & Model Training ##
+
+## Integrating into STM project ##
+
+## Mic Configuration ##
+
+## Demo ##
 
 ### Running the code with STM32CubeIDE ###
 1. Download the repository and unzip it. 
