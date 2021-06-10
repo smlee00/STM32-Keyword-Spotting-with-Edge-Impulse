@@ -1,5 +1,10 @@
 # STM32-Keyword-Spotting-with-Edge-Impulse
 
+##Setting up Edge Impulse
+
+  [Edge Impulse](https://studio.edgeimpulse.com/login "Edge Impulse") is a great platform that allows user to train machine learning model for embedded systems.
+
+
 ### Running the code with STM32CubeIDE
 1. Download the repository and unzip it. 
 2. Select **File > Import..** .
