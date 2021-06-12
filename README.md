@@ -1,13 +1,21 @@
 # STM32-Keyword-Spotting-with-Edge-Impulse #
 # Overview #
 
-This repository records the steps of attempt in making a keyword spotting project using machine learning. In this project, the machine learning model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the porject into a STM32 board.
+This repository records the steps of attempt in making a keyword spotting project using machine learning. In this project, the machine learning model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the porject into a STM32 board. 
 
 ![overview](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/3.png)
 
 ## Materials ##
-
-
+The hardware used in this project are as follow:
+  - Nucleo F446RE Board
+  - Breadboard
+  - I2S microphone (INMP441/ Adafruit MAX9814)
+  - I2S audio amplifier (MAX98357)
+  - 1602 16x2 character LCD display
+  - M-to-M wires
+  - M-to-F wires
+  - F-to-F wires 
+  - LED 
 
 ## Setting up Edge Impulse ##
 
@@ -19,7 +27,8 @@ This repository records the steps of attempt in making a keyword spotting projec
 
 ![API key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/1.png)
 
-## Data Curation ##
+## Data prepareation & Data Curation ##
+In this project, the data that were used to train the Word Classifying Model were obtained form Google Speech Command Datasheet
 
 ## Feature Extraction & Model Training ##
 
@@ -38,4 +47,4 @@ This repository records the steps of attempt in making a keyword spotting projec
 6. Click **Finish**.
 
 Colab file
-https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb
+[Google Colab](https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb)
