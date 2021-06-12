@@ -10,7 +10,7 @@
   
   In the *Keys* tab in the dashboard, the API key of our project can be obtained. This API is used for uploading of the training data to Edge Impulse.
 
-![API key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/1.png?raw=true)
+![API key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/1.png)
 
 ## Data Curation ##
 
