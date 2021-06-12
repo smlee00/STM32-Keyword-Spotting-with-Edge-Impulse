@@ -59,17 +59,32 @@ Data can be viewed in Edge Impulse after uploading.
 
 ## Feature Extraction & Model Training ##
 
+After uploading training data to Edge Impulse, the next step is to create impulse. The impulse determines how the model will be trained. For this project, **Audio (MFCC)** is added as the processing block and **Neural Network (Keras)** is added as the learning block. All settings are remained as default. 
+
+![create_impulse](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/8.png)
+
+Next, we proceed to the **MFCC** tab. At the *Generate Features*, the data uploaded is processed and features are generated in the form of MFCC (Mel Frequency Cepstral Coefficient). This features is fed to the nueral network to train our model. After the processing job completed the features can be visualised in graphical form. 
+
+![mfcc](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/9.png)
+
+Next, the model is trained at the **NN Classifier** tab. In our project, the training setting is kept at default but the neural network architecture is adjusted as we are trying to detect 4 keywors. We used a 3 layer **1D convolutional** neural network with 16, 16 and 32 neurons for respective layer. A dropout of 0.25 is applied after each layer for better training efficiency. After the training process, a confusion matrix is obtained to show the performance of trained model.
+
+![nn_architecture](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/10.png) 
+![confusion_m](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/11.png)
+
+To export the model, we go to the testing and deployment tab. As we are using STM32 Nucleo board, the **C++** library option are chosen. Edge Impulse will compile the C++ library based on TensorflowLite and our model.
+
+![deplou](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/12.png)
 
 ## Integrating into STM project ##
 
 ## Mic Configuration ##
 
-## Demo ##
 
 ### Running the code with STM32CubeIDE ###
 1. Download the repository and unzip it. 
 2. Select **File > Import..** .
 3. Select **Exixting Project into Workspace** and click **Next**. 
-4. Select the unzipped folder.
+4. Select the **nucleo-f446-ei-kws** folder.
 5. Enable **Copy projects to Workspace**.
 6. Click **Finish**.
