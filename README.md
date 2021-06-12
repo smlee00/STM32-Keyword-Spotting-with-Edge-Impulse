@@ -46,9 +46,11 @@ However, if you desire to create your own data samples, you can store your data 
 ```
 
 After having the dataset, data curation is done to 
+
   i. mix the prepared samples with background noise 
   ii. split the data samples into test set and train set
   iii. upload into Edge Impulse project
+  
 This can be done by using this [Google Colab](https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb) file.
 
 ## Feature Extraction & Model Training ##
