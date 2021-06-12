@@ -54,7 +54,11 @@ This can be done by using this [Google Colab](https://colab.research.google.com/
 In the colab file, the API key of project(mentioned above) is added so that the data can be populated into Edge Impulse.
 ![api_key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/5.png)
 
+Data can be viewed in Edge Impulse after uploading.
+![data](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/7.png)
+
 ## Feature Extraction & Model Training ##
+
 
 ## Integrating into STM project ##
 
