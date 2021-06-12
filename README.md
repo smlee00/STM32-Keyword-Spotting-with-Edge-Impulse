@@ -30,8 +30,9 @@ The hardware used in this project are as follow:
 ## Data prepareation & Data Curation ##
 Data that were used to train the Word Classifying Model were obtained form Google Speech Commands datasheet. This can save a lot of time since a large number of samples are needed if we wanted to train our own keyword. The dataset can be downloaded form [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz).
 
-However, if you desire to create your own data samples, you data should be stored as following directory sturcture:
-'
+However, if you desire to create your own data samples, you can store your data following directory structure as below:
+
+```
  |-custom_keywords
  |--keyword_1
  |-----000.wav
@@ -42,7 +43,7 @@ However, if you desire to create your own data samples, you data should be store
  |-----001.wav
  |----- ...
  |-- ...
-'
+```
 
 ## Feature Extraction & Model Training ##
 
