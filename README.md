@@ -3,8 +3,6 @@
 
 This repository records the steps of attempt in making a keyword spotting project using machine learning. In this project, the machine learning model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the porject into a STM32 board. 
 
-![overview](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/3.png)
-
 ## Materials ##
 The hardware used in this project are as follow:
   - Nucleo F446RE Board
@@ -63,7 +61,7 @@ After uploading training data to Edge Impulse, the next step is to create impuls
 
 ![create_impulse](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/8.png)
 
-Next, we proceed to the **MFCC** tab. At the *Generate Features*, the data uploaded is processed and features are generated in the form of MFCC (Mel Frequency Cepstral Coefficient). This features is fed to the nueral network to train our model. After the processing job completed the features can be visualised in graphical form. 
+Next, we proceed to the **MFCC** tab. At the *Generate Features*, the data uploaded is processed and features are generated in the form of MFCC (Mel Frequency Cepstral Coefficient). This features is fed to the neural network to train our model. After the processing job completed the features can be visualised in graphical form. 
 
 ![mfcc](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/9.png)
 
