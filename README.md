@@ -28,7 +28,7 @@ The hardware used in this project are as follow:
 ![API key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/1.png)
 
 ## Data prepareation & Data Curation ##
-Data that were used to train the Word Classifying Model were obtained form Google Speech Commands datasheet. This can save a lot of time since a large number of samples are needed if we wanted to train our own keyword. The dataset can be downloaded form [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz).
+Data that were used to train the Word Classifying Model were obtained form Google Speech Commands datasheet. This can save a lot of time since a large number of samples are needed if we wanted to train our own keyword. The dataset can be downloaded from [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz).
 
 However, if you desire to create your own data samples, you can store your data following the directory structure below.
 
@@ -46,12 +46,13 @@ However, if you desire to create your own data samples, you can store your data 
 ```
 
 After having the dataset, data curation is done to 
-
   1. mix the prepared samples with background noise 
   2. split the data samples into test set and train set
   3. upload into Edge Impulse project
-  
 This can be done by using this [Google Colab](https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb) file.
+
+In the colab file, the API key of project(mentioned above) is added so that the data can be populated into Edge Impulse.
+![api_key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/5.png)
 
 ## Feature Extraction & Model Training ##
 
