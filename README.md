@@ -1,13 +1,20 @@
 # STM32-Keyword-Spotting-with-Edge-Impulse #
 # Overview #
 
+This repository records the steps of attempt in making a keyword spotting project using machine learning. In this project, the machine learning model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the porject into a STM32 board.
+
+![overview](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/3.png)
+
+## Materials ##
+
+
+
 ## Setting up Edge Impulse ##
 
   In this porject, [Edge Impulse](https://studio.edgeimpulse.com/login "Edge Impulse") is used to train our desired model to be integrated into our STM32 project. It is a great platform that allows user to train machine learning model for embedded systems. An account was signed up and a project is created. 
   
- ![ei_porject](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/2.png)
+![ei_project](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/2.png)
  
-  
   In the *Keys* tab in the dashboard, the API key of our project can be obtained. This API is used for uploading of the training data to Edge Impulse.
 
 ![API key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/1.png)
