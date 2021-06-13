@@ -81,7 +81,7 @@ To export the model, we go to the testing and deployment tab. As we are using ST
 
 ## Integrating into STM project ##
 
-# Adding Edge Impulse Library #
+### Adding Edge Impulse Library ###
 After obtaining the compiled files from Edge Impulse, the next thing to do is include it inside our STM32 project. The downloaded file is unzipped, and the directory structure is shown as below:
 ```
 |- <edge-impulse-project-name>
@@ -104,7 +104,9 @@ The **edge-impulse-sdk** contains all libraries needed to run inference, **model
 Next, go to *Project > Properties > C/C++ General > Paths and Symbols* and the paths to Edge Impulse library are added. After adding this, we are ready to integrate the word classifier in the main code. 
 ![path](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/14.png)
 
-## Mic Configuration ##
+In the main.cpp, the header file of the word classifier is sourced.
+
+### Mic Configuration ###
 
 
 
