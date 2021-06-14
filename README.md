@@ -15,6 +15,11 @@ The hardware used in this project are as follow:
   - F-to-F wires 
   - LED 
 
+## Setup Project ##
+A new project is created in the STM32Cube IDE. At the setup page, **NUCLEO-F44GRE** is chosen in the board selector tab. The targeted language is **C++** as some library are not available in **C**. Let all peripherals to initialize in their default state. At the configuration pane, the **CRC** feature at the *Computing* tab is activated so that word classifying can be carried out.
+
+![crc](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/13.png)
+
 ## Setting up Edge Impulse ##
 
   In this porject, [Edge Impulse](https://studio.edgeimpulse.com/login "Edge Impulse") is used to train our desired model to be integrated into our STM32 project. It is a great platform that allows user to train machine learning model for embedded systems. An account was signed up and a project is created. 
@@ -76,7 +81,34 @@ To export the model, we go to the testing and deployment tab. As we are using ST
 
 ## Integrating into STM project ##
 
-## Mic Configuration ##
+### Adding Edge Impulse Library ###
+After obtaining the compiled files from Edge Impulse, the next thing to do is include it inside our STM32 project. The downloaded file is unzipped, and the directory structure is shown as below:
+```
+|- <edge-impulse-project-name>
+|--- edge-impulse-sdk 
+|----- ...
+|--- model-parameters
+|----- dsp_blocks.h 
+|----- model_metadata.h 
+|--- tflite-model
+|----- trained_model_compiled.cpp 
+|----- trained_model_compiled.h 
+```
+The **edge-impulse-sdk** contains all libraries needed to run inference, **model-parameters** contains the dsp data and nueral network model while **tflite-model** contains the model in byte array and the supporting function needed. In the **edege-impulse-sdk**, the libaries compiled by Edge Impulse is to accomodate general boards. We would need to delete some files to make the library specific to our project. These files are:
+
+- edge-impulse-sdk/utensor (uTensor is an alternative to TensorFlow Lite)
+- edge-impulse-sdk/tensorflow/lite/micro/testing (the testing directory contains test code that should not be compiled)
+- all *but* stm32-cubeai folder in edge-impulse-sdk/porting (keep the porting folder for STM32 microcontroller family)
+- ei_run_classifier_c.cpp and ei_run_classifier_c.h in edge-impulse-sdk/classifier (will cause compilation error)
+
+Next, go to *Project > Properties > C/C++ General > Paths and Symbols* and the paths to Edge Impulse library are added. After adding this, we are ready to integrate the word classifier in the main code. 
+![path](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/14.png)
+
+In the main.cpp, the header file of the word classifier is sourced.
+
+### Mic Configuration ###
+
+
 
 
 ### Running the code with STM32CubeIDE ###
