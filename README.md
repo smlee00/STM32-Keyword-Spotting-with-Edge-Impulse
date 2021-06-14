@@ -20,6 +20,9 @@ A new project is created in the STM32Cube IDE. At the setup page, **NUCLEO-F44GR
 
 ![crc](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/13.png)
 
+Next, the USART is configured with the parameters below to allows the communication with serial monitor such as PuTTy to monitor the output of the project.
+![usart](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/17.png)
+
 ## Setting up Edge Impulse ##
 
   In this porject, [Edge Impulse](https://studio.edgeimpulse.com/login "Edge Impulse") is used to train our desired model to be integrated into our STM32 project. It is a great platform that allows user to train machine learning model for embedded systems. An account was signed up and a project is created. 
@@ -52,7 +55,9 @@ After having the dataset, data curation is done to
   1. mix the prepared samples with background noise 
   2. split the data samples into test set and train set
   3. upload into Edge Impulse project
-This can be done by using this [Google Colab](https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb) file.
+This can be done by using this [Google Colab](https://colab.research.google.com/github/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/ei_audio_dataset_curation.ipynb) file. 
+
+There is another option to record your data directly in Edge Impulse with built in microphone, for more details [this](https://docs.arduino.cc/tutorials/nano-33-ble-sense/edge-impulse) can be your reference. 
 
 In the colab file, the API key of project(mentioned above) is added so that the data can be populated into Edge Impulse.
 ![api_key](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/5.png)
@@ -104,17 +109,21 @@ The **edge-impulse-sdk** contains all libraries needed to run inference, **model
 Next, go to *Project > Properties > C/C++ General > Paths and Symbols* and the paths to Edge Impulse library are added. After adding this, we are ready to integrate the word classifier in the main code. 
 ![path](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/14.png)
 
-In the main.cpp, the header file of the word classifier is sourced.
+To run the classifier, we include the header file of the word classifier in the main.cpp. The header file can be found in the path *(edge-impulse-project-name)/edge-impulse-sdk/classifier/ei_run_classifier.h*. The main function that we used for do classification is *run_classifier_continuous*. In the main *while* loop, the function is called to run classification continuously.
+
+![run](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/16.png)
 
 ### Mic Configuration ###
 
 
 
 
-### Running the code with STM32CubeIDE ###
+### Running the project with STM32CubeIDE ###
+To run this project, follow the following steps:
 1. Download the repository and unzip it. 
 2. Select **File > Import..** .
 3. Select **Exixting Project into Workspace** and click **Next**. 
 4. Select the **nucleo-f446-ei-kws** folder.
 5. Enable **Copy projects to Workspace**.
 6. Click **Finish**.
+You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own following the instructions [here](#Adding Edge Impulse Library)
