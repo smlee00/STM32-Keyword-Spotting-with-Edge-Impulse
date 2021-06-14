@@ -23,6 +23,8 @@ A new project is created in the STM32Cube IDE. At the setup page, **NUCLEO-F44GR
 Next, the USART is configured with the parameters below to allows the communication with serial monitor such as PuTTy to monitor the output of the project.
 ![usart](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/17.png)
 
+## Setting up PuTTy ##
+
 ## Setting up Edge Impulse ##
 
   In this porject, [Edge Impulse](https://studio.edgeimpulse.com/login "Edge Impulse") is used to train our desired model to be integrated into our STM32 project. It is a great platform that allows user to train machine learning model for embedded systems. An account was signed up and a project is created. 
@@ -126,4 +128,5 @@ To run this project, follow the following steps:
 4. Select the **nucleo-f446-ei-kws** folder.
 5. Enable **Copy projects to Workspace**.
 6. Click **Finish**.
-You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own following the instructions [here](#adding-edge-impulse-library)
+
+You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own by following the instructions [here](#adding-edge-impulse-library).
