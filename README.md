@@ -1,7 +1,7 @@
 # STM32-Keyword-Spotting-with-Edge-Impulse #
 # Overview #
 
-This repository records the steps of attempt in making a keyword spotting project using machine learning. In this project, the machine learning model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the porject into a STM32 board. 
+This repository records the steps of attempt in making a Voice Assistant project by using machine learning. In this project, a word classifier model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the project into a STM32 board. 
 
 ## Materials ##
 The hardware used in this project are as follow:
