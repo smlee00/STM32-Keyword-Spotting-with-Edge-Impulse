@@ -127,8 +127,3 @@ To run this project, follow the following steps:
 5. Enable **Copy projects to Workspace**.
 6. Click **Finish**.
 You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own following the instructions [here](#Adding Edge Impulse Library)
-section_title<a name="Adding Edge Impulse Library">
-  
-  Markup : [text goes here](#section_name)
-          Adding Edge Impulse Library<a name="section_name"></a>    
-
