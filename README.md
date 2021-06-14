@@ -126,4 +126,4 @@ To run this project, follow the following steps:
 4. Select the **nucleo-f446-ei-kws** folder.
 5. Enable **Copy projects to Workspace**.
 6. Click **Finish**.
-You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own following the instructions [here](#Adding Edge Impulse Library)
+You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own following the instructions [here](#adding-edge-impulse-library)
