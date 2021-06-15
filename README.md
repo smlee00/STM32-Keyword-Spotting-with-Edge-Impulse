@@ -1,7 +1,7 @@
 # STM32-Keyword-Spotting-with-Edge-Impulse #
 # Overview #
 
-This repository records the steps of attempt in making a keyword spotting project using machine learning. In this project, the machine learning model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the porject into a STM32 board. 
+This repository records the steps of attempt in making a Voice Assistant project by using machine learning. In this project, a word classifier model is trained using the Edge Implulse platfrom. STM32Cube is used to compile the code and build the project into a STM32 board. 
 
 ## Materials ##
 The hardware used in this project are as follow:
@@ -22,6 +22,8 @@ A new project is created in the STM32Cube IDE. At the setup page, **NUCLEO-F44GR
 
 Next, the USART is configured with the parameters below to allows the communication with serial monitor such as PuTTy to monitor the output of the project.
 ![usart](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/17.png)
+
+## Setting up PuTTy ##
 
 ## Setting up Edge Impulse ##
 
@@ -126,4 +128,5 @@ To run this project, follow the following steps:
 4. Select the **nucleo-f446-ei-kws** folder.
 5. Enable **Copy projects to Workspace**.
 6. Click **Finish**.
-You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own following the instructions [here](#adding-edge-impulse-library)
+
+You can replace the *ei-keyword-spotting* file with the Edge Impulse library of your own by following the instructions [here](#adding-edge-impulse-library).
