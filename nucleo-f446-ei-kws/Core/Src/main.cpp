@@ -23,6 +23,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdarg.h>
+#include "stdio.h"
+#include "stdint.h"
 
 #include "../../ei-keyword-spotting/edge-impulse-sdk/classifier/ei_run_classifier.h"
 /* USER CODE END Includes */
@@ -91,7 +93,9 @@ void vprint(const char *fmt, va_list argp);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+#define BLOCK_SIZE_U16 4
+uint8_t rxBuf[BLOCK_SIZE_U16*2];
+uint8_t txBuf[BLOCK_SIZE_U16*2];
 /* USER CODE END 0 */
 
 /**
@@ -130,7 +134,8 @@ int main(void)
   MX_CRC_Init();
   MX_SAI1_Init();
   /* USER CODE BEGIN 2 */
-
+  //Receiver
+HAL_SAI_Receive(&hsai_BlockB1, rxBuf, BLOCK_SIZE_U16, 4);
   // Say some stuff
   ei_printf("Inferencing settings:\r\n");
   ei_printf("\tInterval: %.2f ms.\r\n", (float)EI_CLASSIFIER_INTERVAL_MS);
@@ -338,6 +343,7 @@ static void MX_SAI1_Init(void)
 
 }
 
+
 /**
   * @brief USART2 Initialization Function
   * @param None
@@ -525,6 +531,18 @@ void ei_printf(const char *format, ...)
  */
 void HAL_SAI_RxHalfCpltCallback(SAI_HandleTypeDef *hsai)
 {
+		//restore signed 24 bit sample from 16-bit buffers
+		int lSample = (int) (rxBuf[0]<<16) | rxBuf[1];
+		int rSample = (int) (rxBuf[2]<<16) | rxBuf[3];
+
+		lSample = lSample << 1; //amplify sound
+		rSample = lSample; // because there is one mic only
+
+		//sum to mono
+		lSample = rSample + lSample;
+		rSample = lSample;
+
+
   if (record_ready == true)
   {
     audio_buffer_inference_callback(I2S_BUF_LEN / I2S_BUF_SKIP, 0);
@@ -536,6 +554,17 @@ void HAL_SAI_RxHalfCpltCallback(SAI_HandleTypeDef *hsai)
  */
 void HAL_SAI_RxCpltCallback(SAI_HandleTypeDef *hsai)
 {
+	//restore signed 24 bit sample from 16-bit buffers
+			int lSample = (int) (rxBuf[4]<<16) | rxBuf[5];
+			int rSample = (int) (rxBuf[6]<<16) | rxBuf[7];
+
+			lSample = lSample << 1; //amplify sound
+		    rSample = lSample; // because there is one mic only
+
+			//sum to mono
+			lSample = rSample + lSample;
+			rSample = lSample;
+
   if (record_ready == true)
   {
     audio_buffer_inference_callback(I2S_BUF_LEN / I2S_BUF_SKIP, I2S_BUF_LEN >> 1);
