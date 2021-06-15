@@ -23,7 +23,16 @@ A new project is created in the STM32Cube IDE. At the setup page, **NUCLEO-F44GR
 Next, the USART is configured with the parameters below to allows the communication with serial monitor such as PuTTy to monitor the output of the project.
 ![usart](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/17.png)
 
+After setting all this, the configuration file is saved and the code is generated.
+
 ## Setting up PuTTy ##
+We are using PuTTy to monitor the output of our board. It can be downloaded form [here](https://www.ssh.com/academy/ssh/putty/download). To install and configure the tool, folloe the instruction in [this link](https://www.ssh.com/academy/ssh/putty/windows/install). 
+
+After PuTTy has been set up, our board is connected to the USB port of the computer. The serial line is identified by opening the *Device Manager* under the *Ports* tab.
+![com4](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/21.jpeg)
+ 
+Next, at the PuTTy configuration window, the serial line in inserted (in our case it it COM4) and the baud rate is set according to the configuration of the USART at STM32. After setting this, the serial terminal will able to print the output from the board by calling *HAL_UART_Transmit* function in the code.
+![putty](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/22.jpeg)
 
 ## Setting up Edge Impulse ##
 
@@ -120,8 +129,8 @@ To run the classifier, we include the header file of the word classifier in the 
 
 
 
-### Running the project with STM32CubeIDE ###
-To run this project, follow the following steps:
+### Rerun This Project ###
+To run this project, install [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html#get-software) and follow the following steps:
 1. Download the repository and unzip it. 
 2. Select **File > Import..** .
 3. Select **Exixting Project into Workspace** and click **Next**. 
