@@ -26,12 +26,14 @@ Next, the USART is configured with the parameters below to allows the communicat
 After setting all this, the configuration file is saved and the code is generated.
 
 ## Setting up PuTTy ##
-We are using PuTTy to monitor the output of our board. It can be downloaded form [here](https://www.ssh.com/academy/ssh/putty/download). To install and configure the tool, folloe the instruction in [this link](https://www.ssh.com/academy/ssh/putty/windows/install). 
+We are using PuTTy to monitor the output of our board. It can be downloaded form [here](https://www.ssh.com/academy/ssh/putty/download). To install and configure the tool, follow the instruction in [this link](https://www.ssh.com/academy/ssh/putty/windows/install). 
 
 After PuTTy has been set up, our board is connected to the USB port of the computer. The serial line is identified by opening the *Device Manager* under the *Ports* tab.
+
 ![com4](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/21.jpeg)
  
 Next, at the PuTTy configuration window, the serial line in inserted (in our case it it COM4) and the baud rate is set according to the configuration of the USART at STM32. After setting this, the serial terminal will able to print the output from the board by calling *HAL_UART_Transmit* function in the code.
+
 ![putty](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/22.jpeg)
 
 ## Setting up Edge Impulse ##
