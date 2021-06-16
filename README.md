@@ -126,10 +126,10 @@ To run the classifier, we include the header file of the word classifier in the 
 
 ![run](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/16.png)
 
-### Mic Configuration ###
+## Mic Configuration ##
+In this project, we are using *INMP441* MEMS microphone to take in audio input. The setup of the microphone can be done by refering to the [datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/INMP441.pdf) of the mic. We used the SAI interface of the board to connect with *INMP441* as the I2S protocol can be used with this interface. The parameters are configured as follow:
 
-
-
+![sai](https://github.com/smlee00/STM32-Keyword-Spotting-with-Edge-Impulse/blob/main/Images/24.jpeg)
 
 ### Rerun This Project ###
 To run this project, install [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html#get-software) and follow the following steps:
